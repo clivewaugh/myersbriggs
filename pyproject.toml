@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "myersbriggs"
+version = "0.1.0"
+description = "The myersbriggs project allows text to be identified under the MBTI"
+authors = [
+    { name = "Clive Waugh", email = "cwproprogrammer@outlook.com" }
+]
+readme = "README.md"
+requires-python = ">=3.12"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
